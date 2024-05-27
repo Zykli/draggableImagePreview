@@ -1,0 +1,6 @@
+.ImageViewer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    grid-gap: 8px;
+}

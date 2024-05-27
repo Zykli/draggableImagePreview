@@ -1,0 +1,49 @@
+.ViewerItem {
+    outline: 1px solid red;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* max-height: 450px; */
+}
+/* .ViewerItem:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+    display: block;
+} */
+
+.ViewerItem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+
+.ViewerItem.draggable {
+    cursor: grab;
+}
+
+.ViewerItemDropper {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+}
+
+.ViewerItemBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    filter: blur(10px);
+    display: none;
+}
