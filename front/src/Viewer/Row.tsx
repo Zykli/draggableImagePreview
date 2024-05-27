@@ -71,8 +71,10 @@ const ViewerRowPr: FC<{
 
     useEffect(() => {
         window.addEventListener('drop', onDragEnd);
+        window.addEventListener('touchend', onDragEnd);
         return () => {
             window.removeEventListener('drop', onDragEnd);
+            window.removeEventListener('touchend', onDragEnd);
         }
     }, []);
 
